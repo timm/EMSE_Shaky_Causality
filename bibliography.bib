@@ -1,0 +1,880 @@
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+
+@inproceedings{hess2004robust,
+  title={Robust confidence intervals for effect sizes: A comparative study of Cohen’sd and Cliff’s delta under non-normality and heterogeneous variances},
+  author={Hess, Melinda R and Kromrey, Jeffrey D},
+  booktitle={annual meeting of the American Educational Research Association},
+  volume={1},
+  year={2004},
+  organization={Citeseer}
+}
+
+@article{macbeth2011cliff,
+  title={Cliff{\'{}} s Delta Calculator: Un programa para calcular el tama{\~n}o del efecto no param{\'e}trico al comparar dos grupos de observaciones},
+  author={Macbeth, Guillermo and Razumiejczyk, Eugenia and Ledesma, Rub{\'e}n Daniel},
+  journal={Universitas Psychologica},
+  volume={10},
+  number={2},
+  pages={545},
+  year={2011},
+  publisher={Editorial Pontificia Universidad Javeriana}
+}
+
+@article{xia2018hyperparameter,
+  title={Hyperparameter optimization for effort estimation},
+  author={Xia, Tianpei and Krishna, Rahul and Chen, Jianfeng and Mathew, George and Shen, Xipeng and Menzies, Tim},
+  journal={arXiv preprint arXiv:1805.00336},
+  year={2018}
+}
+
+@article{mittas2012ranking,
+  title={Ranking and clustering software cost estimation models through a multiple comparisons algorithm},
+  author={Mittas, Nikolaos and Angelis, Lefteris},
+  journal={IEEE Transactions on software engineering},
+  volume={39},
+  number={4},
+  pages={537--551},
+  year={2012},
+  publisher={IEEE}
+}
+
+@ARTICLE{815326,
+  author={Fenton, N.E. and Neil, M.},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={A critique of software defect prediction models}, 
+  year={1999},
+  volume={25},
+  number={5},
+  pages={675-689},
+  keywords={Predictive models;Bayesian methods;Software quality;Computer Society;System testing;Process design;Software maintenance;Software systems;Software metrics;Software testing},
+  doi={10.1109/32.815326}}
+
+
+@article{fenton1999critique,
+  title={A critique of software defect prediction models},
+  author={Fenton, Norman E and Neil, Martin},
+  journal={IEEE Transactions on software engineering},
+  volume={25},
+  number={5},
+  pages={675--689},
+  year={1999},
+  publisher={IEEE}
+}
+
+
+@inproceedings{Fenton2000SoftwareMR,
+  title={Software metrics: roadmap},
+  author={Norman E. Fenton and Martin Neil},
+  booktitle={International Conference on Software Engineering},
+  year={2000},
+  pages={357--370},
+  publisher={ACM Press},
+  isbn={1-58113-253-0}
+}
+
+@article{messerli2012chocolate,
+  title={Chocolate consumption, cognitive function, and Nobel laureates},
+  author={Messerli, Franz H},
+  journal={N Engl J Med},
+  volume={367},
+  number={16},
+  pages={1562--1564},
+  year={2012}
+}
+
+
+@article{Prinz,
+title = {Chocolate consumption and Noble laureates},
+journal = {Social Sciences & Humanities Open},
+volume = {2},
+number = {1},
+pages = {100082},
+year = {2020},
+issn = {2590-2911},
+doi = {https://doi.org/10.1016/j.ssaho.2020.100082},
+url = {https://www.sciencedirect.com/science/article/pii/S2590291120300711},
+author = {Aloys Leo Prinz},
+keywords = {Chocolate consumption, Coffee consumption, Scientific papers, R & D expenditures, Nobel laureates, Spurious correlation},
+abstract = {At first glance, the positive correlation of chocolate consumption per capita and the accumulated number of Nobel laureates per capita, as reported by Messerli (2012), seems spurious. The intention of this paper is to check whether this correlation vanishes if relevant covariates and a sophisticated estimation method are employed. A two-stage Heckman selection model is estimated where the stock of Nobel laureates per capita is regressed on chocolate consumption per capita, as well as the number of published scientific papers, R & D expenditures per capita and GDP per capita. In addition, coffee and tobacco consumption per capita are also included. In contrast to the expectation, it is found that a positive correlation between chocolate consumption per capita and the stock of Nobel laureates per capita persists although more recent data and relevant covariates, as well as a sophisticated estimation method are used. In addition, a further negative correlation between coffee consumption per capita and the number of Nobel laureates per capita is detected. Albeit no clear causal relationship between winning a Nobel prize and chocolate or coffee consumption seems to exists, it remains unclear whether the effects are caused by hidden variables or by chance. However, the results are limited due to the lack of individual consumption data.}
+}
+
+
+@article{breiman2001statistical,
+  title={Statistical modeling: The two cultures (with comments and a rejoinder by the author)},
+  author={Breiman, Leo},
+  journal={Statistical science},
+  volume={16},
+  number={3},
+  pages={199--231},
+  year={2001},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@inproceedings{ProcessSets,
+  title={Xomo: Understanding development options for autonomy},
+  author={Menzies, Tim and Richardson, Julian},
+  booktitle={COCOMO forum},
+  volume={2005},
+  year={2005}
+}
+
+@article{configSets,
+  title={VEER: Disagreement-free multi-objective configuration},
+  author={Peng, Kewen and Kaltenecker, Christian and Siegmund, Norbert and Apel, Sven and Menzies, Tim},
+  journal={CoRR},
+  year={2021}
+}
+@inproceedings{defectDatasets,
+  title={Towards identifying software project clusters with regard to defect prediction},
+  author={Jureczko, Marian and Madeyski, Lech},
+  booktitle={Proceedings of the 6th international conference on predictive models in software engineering},
+  pages={1--10},
+  year={2010}
+}
+
+@article{SIEBERT2023107198,
+title = {Applications of statistical causal inference in software engineering},
+journal = {Information and Software Technology},
+volume = {159},
+pages = {107198},
+year = {2023},
+issn = {0950-5849},
+note = {\url{https://www.sciencedirect.com/science/article/pii/S0950584923000526}},
+author = {Julien Siebert}
+
+}
+
+@book{spirtes2001causation,
+  title={Causation, prediction, and search},
+  author={Spirtes, Peter and Glymour, Clark and Scheines, Richard},
+  year={2001},
+  publisher={MIT press}
+}
+
+@article{shimizu2006linear,
+  title={A linear non-Gaussian acyclic model for causal discovery.},
+  author={Shimizu, Shohei and Hoyer, Patrik O and Hyv{\"a}rinen, Aapo and Kerminen, Antti and Jordan, Michael},
+  journal={Journal of Machine Learning Research},
+  volume={7},
+  number={10},
+  year={2006}
+}
+
+@article{zheng2024causal,
+  title={Causal-learn: Causal discovery in python},
+  author={Zheng, Yujia and Huang, Biwei and Chen, Wei and Ramsey, Joseph and Gong, Mingming and Cai, Ruichu and Shimizu, Shohei and Spirtes, Peter and Zhang, Kun},
+  journal={Journal of Machine Learning Research},
+  volume={25},
+  number={60},
+  pages={1--8},
+  year={2024}
+}
+
+@article{chickering2002optimal,
+  title={Optimal structure identification with greedy search},
+  author={Chickering, David Maxwell},
+  journal={Journal of machine learning research},
+  volume={3},
+  number={Nov},
+  pages={507--554},
+  year={2002}
+}
+
+@article{spirtes2013causal,
+  title={Causal inference in the presence of latent variables and selection bias},
+  author={Spirtes, Peter L and Meek, Christopher and Richardson, Thomas S},
+  journal={arXiv preprint arXiv:1302.4983},
+  year={2013}
+}
+
+@ArtifactSoftware{RSoftware,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2019},
+    url = {https://www.R-project.org/},
+}
+
+@INPROCEEDINGS{Groot,
+  author={Wang, Hanzhang and Wu, Zhengkai and Jiang, Huai and Huang, Yichao and Wang, Jiamu and Kopru, Selcuk and Xie, Tao},
+  booktitle={2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={Groot: An Event-graph-based Approach for Root Cause Analysis in Industrial Settings}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={419-429},
+  keywords={Measurement;Knowledge engineering;Root cause analysis;Microservice architectures;Production;Reliability engineering;Real-time systems;microservices;root cause analysis;AIOps;observability},
+  doi={10.1109/ASE51524.2021.9678708}}
+
+@INPROCEEDINGS{PerfCE,
+  author={Ji, Zhenlan and Ma, Pingchuan and Wang, Shuai},
+  booktitle={2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={Perfce: Performance Debugging on Databases with Chaos Engineering-Enhanced Causality Analysis}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1454-1466},
+  keywords={Chaos;Software testing;Root cause analysis;Distributed databases;Debugging;Software systems;Observability;Performance Debugging;Chaos Engineering;Causality Analysis},
+  doi={10.1109/ASE56229.2023.00106}}
+
+
+@ARTICLE{CauseInfer,
+  author={Chen, Pengfei and Qi, Yong and Hou, Di},
+  journal={IEEE Transactions on Services Computing}, 
+  title={CauseInfer: Automated End-to-End Performance Diagnosis with Hierarchical Causality Graph in Cloud Environment}, 
+  year={2019},
+  volume={12},
+  number={2},
+  pages={214-230},
+  keywords={Measurement;Cloud computing;Computer bugs;Runtime;Monitoring;System analysis and design;Performance diagnosis;distributed system;causality;anomaly detection;cloud system},
+  doi={10.1109/TSC.2016.2607739}}
+
+@inproceedings{MicroScope,
+  title={Microscope: Pinpoint Performance Issues with Causal Graphs in Micro-service Environments},
+  author={JinJin Lin and Pengfei Chen and Zibin Zheng},
+  booktitle={International Conference on Service Oriented Computing},
+  year={2018},
+  url={https://api.semanticscholar.org/CorpusID:53233176}
+}
+
+@InProceedings{pmlr-v52-ogarrio16,
+  title = 	 {A Hybrid Causal Search Algorithm for Latent Variable Models},
+  author = 	 {Ogarrio, Juan Miguel and Spirtes, Peter and Ramsey, Joe},
+  booktitle = 	 {Proceedings of the Eighth International Conference on Probabilistic Graphical Models},
+  pages = 	 {368--379},
+  year = 	 {2016},
+  editor={Antonucci, Alessandro and Corani, Giorgio and Campos, Cassio Polpo},
+  volume = 	 {52},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lugano, Switzerland},
+  month = 	 {06--09 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v52/ogarrio16.pdf},
+  url = 	 {https://proceedings.mlr.press/v52/ogarrio16.html},
+  abstract = 	 {Existing score-based causal model search algorithms such as \textitGES (and a speeded up version, \textitFGS) are asymptotically correct, fast, and reliable, but make the unrealistic assumption that the true causal graph does not contain any unmeasured confounders. There are several constraint-based causal search algorithms (e.g \textitRFCI, \emphFCI, or \emphFCI+) that are asymptotically correct without assuming that there are no unmeasured confounders, but often perform poorly on small samples. We describe a combined score and constraint-based algorithm, \emphGFCI, that we prove is asymptotically correct. On synthetic data, \textitGFCI is only slightly slower than \emphRFCI but more accurate than \textitFCI, \textitRFCI and \textitFCI+.}
+}
+
+
+@ARTICLE{PCParalell,
+  author={Le, Thuc Duy and Hoang, Tao and Li, Jiuyong and Liu, Lin and Liu, Huawen and Hu, Shu},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, 
+  title={A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs}, 
+  year={2019},
+  volume={16},
+  number={5},
+  pages={1483-1495},
+  keywords={Algorithm design and analysis;Gene expression;Inference algorithms;Microcomputers;Parallel processing;Runtime;Causal discovery;gene expression data;high dimensional data;miRNA targets;parallel computing;PC algorithm},
+  doi={10.1109/TCBB.2016.2591526}}
+
+
+@book{Spirtes_book,
+author = {Spirtes, Peter and Glymour, Clark and Scheines, Richard},
+year = {1993},
+month = {01},
+pages = {},
+title = {Causation, Prediction, and Search},
+volume = {81},
+isbn = {978-1-4612-7650-0},
+journal = {Causation, Prediction, and Search},
+doi = {10.1007/978-1-4612-2748-9}
+}
+
+@inproceedings{Zheng2018DAGsWN,
+  title={DAGs with NO TEARS: Continuous Optimization for Structure Learning},
+  author={Xun Zheng and Bryon Aragam and Pradeep Ravikumar and Eric P. Xing},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+
+@article{chawla2002smote,
+  title={SMOTE: synthetic minority over-sampling technique},
+  author={Chawla, Nitesh V and Bowyer, Kevin W and Hall, Lawrence O and Kegelmeyer, W Philip},
+  journal={Journal of artificial intelligence research},
+  volume={16},
+  pages={321--357},
+  year={2002}
+}
+
+
+@article{Lewis1973,
+	journal = {Journal of Philosophy},
+	pages = {556--567},
+	title = {Causation},
+	number = {17},
+	volume = {70},
+	publisher = {Oxford Up},
+	doi = {10.2307/2025310},
+	author = {David Lewis},
+	year = {1973}
+}
+
+
+@book{pearl2018book,
+  title={The book of why: the new science of cause and effect},
+  author={Pearl, Judea and Mackenzie, Dana},
+  year={2018},
+  publisher={Basic books}
+}
+
+
+@InProceedings{pmlr-v81-menon18a,
+  title = 	 {The cost of fairness in binary classification},
+  author = 	 {Aditya Krishna Menon and Robert C Williamson},
+  booktitle = 	 {Proceedings of the 1st Conference on Fairness, Accountability and Transparency},
+  pages = 	 {107--118},
+  year = 	 {2018},
+  editor = 	 {Sorelle A. Friedler and Christo Wilson},
+  volume = 	 {81},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {New York, NY, USA},
+  month = 	 {23--24 Feb},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v81/menon18a/menon18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v81/menon18a.html},
+  abstract = 	 {Binary classifiers are often required to possess fairness in the sense of not overly discriminating with respect to a feature deemed sensitive e.g. race. We study the inherent tradeoffs in learning classifiers with a fairness constraint in the form of two questions: what is the best accuracy we can expect for a given level of fairness?, and what is the nature of these optimal fairness-aware classifiers? To answer these questions, we provide three main contributions. First, we relate two existing fairness measures to cost-sensitive risks. Second, we show that for such cost-sensitive fairness measures, the optimal classifier is an instance-dependent thresholding of the class-probability function. Third, we relate the tradeoff between accuracy and fairness to the alignment between the target and sensitive features’ class-probabilities. A practical implication of our analysis is a simple approach to the fairness-aware problem which involves suitably thresholding class-probability estimates.}
+}
+
+
+@misc{dowhy1,
+author={Sharma, Amit and Kiciman, Emre and others},
+title={Do{W}hy: {A Python package for causal inference}},
+year={2019}
+}
+
+@article{dowhypaper2,
+title={DoWhy: An End-to-End Library for Causal Inference},
+author={Sharma, Amit and Kiciman, Emre},
+journal={arXiv preprint arXiv:2011.04216},
+year={2020}
+}
+
+@unpublished{dowhypaper,
+author = {Sharma, Amit and Kiciman, Emre},
+title = {DoWhy: An End-to-End Library for Causal Inference},
+year = {2020},
+month = {November},
+}
+
+
+
+@ARTICLE {Poshyvanyk24,
+author = {D. Nader Palacio and A. Velasco and N. Cooper and A. Rodriguez and K. Moran and D. Poshyvanyk},
+journal = {IEEE Transactions on Software Engineering},
+title = {Toward a Theory of Causation for Interpreting Neural Code Models},
+year = {2024},
+volume = {50},
+number = {05},
+issn = {1939-3520},
+pages = {1215-1243},
+abstract = {Neural Language Models of Code, or Neural Code Models (NCMs), are rapidly progressing from research prototypes to commercial developer tools. As such, understanding the capabilities and limitations of such models is becoming critical. However, the abilities of these models are typically measured using automated metrics that often only reveal a portion of their real-world performance. While, in general, the performance of NCMs appears promising, currently much is unknown about how such models arrive at decisions. To this end, this paper introduces do${}_{\textbf{code}}$code , a post hoc interpretability method specific to NCMs that is capable of explaining model predictions. do${}_{\textbf{code}}$code is based upon causal inference to enable programming language-oriented explanations. While the theoretical underpinnings of do${}_{\textbf{code}}$code are extensible to exploring different model properties, we provide a concrete instantiation that aims to mitigate the impact of spurious correlations by grounding explanations of model behavior in properties of programming languages. To demonstrate the practical benefit of do${}_{\textbf{code}}$code , we illustrate the insights that our framework can provide by performing a case study on two popular deep learning architectures and ten NCMs. The results of this case study illustrate that our studied NCMs are sensitive to changes in code syntax. All our NCMs, except for the BERT-like model, statistically learn to predict tokens related to blocks of code (e.g., brackets, parenthesis, semicolon) with less confounding bias as compared to other programming language constructs. These insights demonstrate the potential of do${}_{\textbf{code}}$code as a useful method to detect and facilitate the elimination of confounding bias in NCMs.},
+keywords = {codes;predictive models;correlation;adaptation models;measurement;task analysis;software engineering},
+doi = {10.1109/TSE.2024.3379943},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {may}
+}
+
+
+@inproceedings{SIEVE,
+author = {Thalheim, J\"{o}rg and Rodrigues, Antonio and Akkus, Istemi Ekin and Bhatotia, Pramod and Chen, Ruichuan and Viswanath, Bimal and Jiao, Lei and Fetzer, Christof},
+title = {Sieve: actionable insights from monitored metrics in distributed systems},
+year = {2017},
+isbn = {9781450347204},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3135974.3135977},
+doi = {10.1145/3135974.3135977},
+booktitle = {Proceedings of the 18th ACM/IFIP/USENIX Middleware Conference},
+pages = {14–27},
+numpages = {14},
+keywords = {microservices, time series analysis},
+location = {Las Vegas, Nevada},
+series = {Middleware '17}
+}
+
+@inproceedings{SAGE,
+author = {Gan, Yu and Liang, Mingyu and Dev, Sundar and Lo, David and Delimitrou, Christina},
+title = {Sage: practical and scalable ML-driven performance debugging in microservices},
+year = {2021},
+isbn = {9781450383172},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3445814.3446700},
+doi = {10.1145/3445814.3446700},
+pages = {135–151},
+numpages = {17},
+keywords = {variational autoencoder, performance debugging, microservices, counterfactual, cloud computing, QoS, Bayesian network},
+location = {Virtual, USA},
+series = {ASPLOS '21}
+}
+
+@ARTICLE{MICROSERVICE,
+  author={Thönes, Johannes},
+  journal={IEEE Software}, 
+  title={Microservices}, 
+  year={2015},
+  volume={32},
+  number={1},
+  pages={116-116},
+  keywords={Interviews;Software architecture;Service oriented architecture;Software engineering;architecture;enterprise service bus;http;microservice;service-oriented architecture;software engineering;SE Radio},
+  doi={10.1109/MS.2015.11}}
+
+@Manual{dplyr,
+  title = {dplyr: A Grammar of Data Manipulation},
+  author = {Hadley Wickham and Romain François and Lionel Henry and Kirill Müller and Davis Vaughan},
+  year = {2023},
+  note = {R package version 1.1.4},
+  url = {https://github.com/tidyverse/dplyr},
+  howpublished = {\url{https://dplyr.tidyverse.org}},
+}
+
+@Article{PCALG1,
+    title = {Causal Inference Using Graphical Models with the {R}
+      Package {pcalg}},
+    author = {{Markus Kalisch} and {Martin M\"achler} and {Diego
+      Colombo} and {Marloes H. Maathuis} and {Peter B\"uhlmann}},
+    journal = {Journal of Statistical Software},
+    year = {2012},
+    volume = {47},
+    number = {11},
+    pages = {1--26},
+    doi = {10.18637/jss.v047.i11},
+  }
+
+@article{Hoyer2008,
+  title={Nonlinear causal discovery with additive noise models},
+  author={Hoyer, Patrik O and Janzing, Dominik and Mooij, Joris M and Peters, Jonas and Sch{\"o}lkopf, Bernhard},
+  journal={Advances in neural information processing systems},
+  pages={689--696},
+  year={2008}
+}
+
+@inproceedings{Lacerda2008,
+  title={Discovering cyclic causal models},
+  author={Lacerda, Guilherme and Spirtes, Peter and Ramsey, Joseph and Hoyer, Patrik O},
+  booktitle={Proceedings of the 24th Conference on Uncertainty in Artificial Intelligence},
+  pages={366--374},
+  year={2008}
+}
+
+@article{SanchezRomero2019,
+  title={Causal discovery with generalized linear models: Identifiability and limitations},
+  author={Sanchez-Romero, Raquel and Blobaum, Patrick and Kalisch, Markus and B{\"u}hlmann, Peter},
+  journal={arXiv preprint arXiv:1906.04686},
+  year={2019}
+}
+
+@article{Zhang2017a,
+  title={Causal discovery in the presence of measurement error: Identifiability conditions and efficient algorithms},
+  author={Zhang, Kun and Li, Jiji and Muandet, Krikamol and Zhang, Biwei and Sch{\"o}lkopf, Bernhard},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={28},
+  number={10},
+  pages={2387--2398},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{Huang2017,
+  title={Causal discovery from nonstationary/heterogeneous data},
+  author={Huang, Biwei and Zhang, Kun and Zhang, Jiji and Glymour, Clark},
+  booktitle={Proceedings of the 33rd Conference on Uncertainty in Artificial Intelligence},
+  pages={184--193},
+  year={2017}
+}
+
+@inproceedings{Zhang2017b,
+  title={Detecting unfaithfulness with localized conditional independence test},
+  author={Zhang, Kun and Huang, Biwei and Zhang, Jiji and Glymour, Clark and Sch{\"o}lkopf, Bernhard},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5146--5155},
+  year={2017}
+}
+
+@article{Tu2019,
+  title={Causal discovery with missing data: A review},
+  author={Tu, Yibo and Zhang, Kun and Grosse-Wentrup, Moritz},
+  journal={arXiv preprint arXiv:1906.04686},
+  year={2019}
+}
+
+@article{Danks2013,
+  title={Learning causal structure from aggregated data},
+  author={Danks, David and Plis, Sergey M},
+  journal={Behaviormetrika},
+  volume={40},
+  number={2},
+  pages={169--189},
+  year={2013},
+  publisher={Springer}
+}
+
+@inproceedings{Gong2015,
+  title={Discovering causal structure from subsampled time series},
+  author={Gong, Mingming and Zhang, Kun and Sch{\"o}lkopf, Bernhard},
+  booktitle={Proceedings of the 31st Conference on Uncertainty in Artificial Intelligence},
+  pages={278--287},
+  year={2015}
+}
+
+@article{Gong2017,
+  title={Discovering causal structure from aggregated and subsampled time series data},
+  author={Gong, Mingming and Zhang, Kun and Sch{\"o}lkopf, Bernhard},
+  journal={Journal of Machine Learning Research},
+  volume={18},
+  number={166},
+  pages={1--38},
+  year={2017}
+}
+
+@Article{Ernst2023,
+author="Ernst, Neil A.
+and Baldassarre, Maria Teresa",
+title="Registered reports in software engineering",
+journal="Empirical Software Engineering",
+year="2023",
+month="Mar",
+day="11",
+volume="28",
+number="2",
+pages="55",
+abstract="Registered reports are scientific publications which begin the publication process by first having the detailed research protocol, including key research questions, reviewed and approved by peers. Subsequent analysis and results are published with minimal additional review, even if there was no clear support for the underlying hypothesis, as long as the approved protocol is followed. Registered reports can prevent several questionable research practices and give early feedback on research designs. In software engineering research, registered reports were first introduced in the International Conference on Mining Software Repositories (MSR) in 2020. They are now established in three conferences and two pre-eminent journals, including this one (EMSE). We explain the motivation for registered reports, outline the way they have been implemented in software engineering, and outline some ongoing challenges for addressing high quality software engineering research.",
+issn="1573-7616",
+doi="10.1007/s10664-022-10277-5",
+url="https://doi.org/10.1007/s10664-022-10277-5"
+}
+
+
+@misc{senthilkumar2024largelanguagemodelsimprove,
+      title={Can Large Language Models Improve SE Active Learning via Warm-Starts?}, 
+      author={Lohith Senthilkumar and Tim Menzies},
+      year={2024},
+      eprint={2501.00125},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2501.00125}, 
+}
+
+
+  @Article{PCALG2,
+    title = {Characterization and greedy learning of interventional
+      {M}arkov equivalence classes of directed acyclic graphs},
+    author = {{Alain Hauser} and {Peter B\"uhlmann}},
+    journal = {Journal of Machine Learning Research},
+    year = {2012},
+    volume = {13},
+    pages = {2409--2464},
+    url = {https://jmlr.org/papers/v13/hauser12a.html},
+  }
+
+@article{krall2015gale,
+  title={Gale: Geometric active learning for search-based software engineering},
+  author={Krall, Joseph and Menzies, Tim and Davies, Misty},
+  journal={IEEE Transactions on Software Engineering},
+  volume={41},
+  number={10},
+  pages={1001--1018},
+  year={2015},
+  publisher={IEEE}
+}
+
+@article{witten2002data,
+  title={Data mining: practical machine learning tools and techniques with Java implementations},
+  author={Witten, Ian H and Frank, Eibe},
+  journal={Acm Sigmod Record},
+  volume={31},
+  number={1},
+  pages={76--77},
+  year={2002},
+  publisher={ACM New York, NY, USA}
+}
+@article{kalisch2007estimating,
+  title={Estimating high-dimensional directed acyclic graphs with the PC-algorithm.},
+  author={Kalisch, Markus and B{\"u}hlman, Peter},
+  journal={Journal of Machine Learning Research},
+  volume={8},
+  number={3},
+  year={2007}
+}
+
+@INPROCEEDINGS{METAMORPHIC,
+  author={Clark, Andrew G. and Foster, Michael and Walkinshaw, Neil and Hierons, Robert M.},
+  booktitle={2023 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={Metamorphic Testing with Causal Graphs}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={153-164},
+  keywords={Software testing;Java;Graphical models;Computer bugs;Software;Test pattern generators;Usability;Metamorphic testing;Causality;DAGs},
+  doi={10.1109/ICST57152.2023.00023}}
+
+
+@misc{colombo2013orderindependent,
+      title={Order-independent constraint-based causal structure learning}, 
+      author={Diego Colombo and Marloes H. Maathuis},
+      year={2013},
+      eprint={1211.3295},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@INPROCEEDINGS{USES,
+  author={Chadbourne, Patrick and Eisty, Nasir U.},
+  booktitle={2023 IEEE/ACIS 21st International Conference on Software Engineering Research, Management and Applications (SERA)}, 
+  title={Applications of Causality and Causal Inference in Software Engineering}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={47-52},
+  keywords={Location awareness;Systematics;Statistical analysis;Bibliographies;Cognition;Software;Question answering (information retrieval);causal inference;causal reasoning;causality graph;software engineering;systematic literature review},
+  doi={10.1109/SERA57763.2023.10197835}}
+
+
+@article{fu2016tuning,
+  title={Tuning for software analytics: Is it really necessary?},
+  author={Fu, Wei and Menzies, Tim and Shen, Xipeng},
+  journal={Information and Software Technology},
+  volume={76},
+  pages={135--146},
+  year={2016},
+  publisher={Elsevier}
+}
+
+
+@article{CAUSALLDEF,
+author = {Witte, Janine and Henckel, Leonard and Maathuis, Marloes H. and Didelez, Vanessa},
+title = {On efficient adjustment in causal graphs},
+year = {2020},
+issue_date = {January 2020},
+publisher = {JMLR.org},
+volume = {21},
+number = {1},
+issn = {1532-4435},
+abstract = {We consider estimation of a total causal effect from observational data via covariate adjustment. Ideally, adjustment sets are selected based on a given causal graph, reflecting knowledge of the underlying causal structure. Valid adjustment sets are, however, not unique. Recent research has introduced a graphical criterion for an 'optimal' valid adjustment set (O-set). For a given graph, adjustment by the O-set yields the smallest asymptotic variance compared to other adjustment sets in certain parametric and non-parametric models. In this paper, we provide three new results on the O-set. First, we give a novel, more intuitive graphical characterisation: We show that the O-set is the parent set of the outcome node(s) in a suitable latent projection graph, which we call the forbidden projection. An important property is that the forbidden projection preserves all information relevant to total causal effect estimation via covariate adjustment, making it a useful methodological tool in its own right. Second, we extend the existing IDA algorithm to use the O-set, and argue that the algorithm remains semi-local. This is implemented in the R-package pcalg. Third, we present assumptions under which the O-set can be viewed as the target set of popular non-graphical variable selection algorithms such as stepwise backward selection.},
+journal = {J. Mach. Learn. Res.},
+month = {jan},
+articleno = {246},
+numpages = {45},
+keywords = {causal discovery, causal inference, confounder selection, confounding, efficiency, graphical models, IDA algorithm, model selection, sufficient adjustment set}
+}
+
+@INPROCEEDINGS{BIASINRESULTS,
+  author={Chadbourne, Patrick and Eisty, Nasir U.},
+  booktitle={2023 IEEE/ACIS 21st International Conference on Software Engineering Research, Management and Applications (SERA)}, 
+  title={Applications of Causality and Causal Inference in Software Engineering}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={47-52},
+  keywords={Location awareness;Systematics;Statistical analysis;Bibliographies;Cognition;Software;Question answering (information retrieval);causal inference;causal reasoning;causality graph;software engineering;systematic literature review},
+  doi={10.1109/SERA57763.2023.10197835}}
+
+
+@INPROCEEDINGS{DATASHIFT,
+  author={Paleyes, Andrei and Guo, Siyuan and Scholkopf, Bernhard and Lawrence, Neil D.},
+  booktitle={2023 IEEE/ACM 2nd International Conference on AI Engineering – Software Engineering for AI (CAIN)}, 
+  title={Dataflow graphs as complete causal graphs}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={7-12},
+  keywords={Software design;Programming;Software systems;Artificial intelligence;Task analysis;Software engineering;Business;flow-based programming;causal inference;dataflow graph;root cause analysis;experimentation},
+  doi={10.1109/CAIN58948.2023.00010}}
+

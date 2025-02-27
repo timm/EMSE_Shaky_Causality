@@ -1,0 +1,21 @@
+digraph DefectFlow {
+    rankdir=TB;
+    layout=dot;
+    size="4,6";
+    ratio=compress;
+
+    node [shape=ellipse];
+
+    dd [label="Defects Defected\n(pre-release faults)"]
+     od [label="Operational Defected\n(post-release failures)"]
+    "Problem Complexity" -> "Defects Introduced";
+    "Design Effort" -> "Defects Introduced";
+    "Defects Introduced" -> dd;
+    "Defects Introduced" -> "Residual Defects";
+    "Testing Effort" -> dd;
+    dd -> "Residual Defects";
+    "Residual Defects" -> od;
+    "Operational usage" -> od 
+    graph [shape=box];
+}
+

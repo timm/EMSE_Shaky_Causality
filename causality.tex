@@ -1,0 +1,103 @@
+\subsection{Causality in SE}
+
+Causality is open said to be  important in software engineering for several~\cite{10197835, kazman2017causal}. 
+First and foremost, it is  said to be a useful construct for debugging and troubleshooting~\cite{10.1145/3318464.3389694}. When software systems fail or exhibit unexpected behavior, identifying the root cause is crucial. 
+Understanding the causal relationships between events would allow developers to trace the sequence of actions leading to the failure, making it easier to diagnose and resolve issues.
+
+Effective testing and verification is also reliant on understanding causality~\cite{10.1145/3635709, 10.1145/3377811.3380377}. 
+Testing involves comprehending how changes in the codebase affect the system's behavior. 
+By understanding causality, engineers could design tests that accurately capture the effects of code modifications, ensuring new features function correctly and existing functionality remains intact.
+
+In multi-threaded or distributed systems, 
+concepts of causality plays a large role in 
+discussions about managing concurrency and synchronization~\cite{485846, 6848128}. 
+Understanding the order and dependencies of events is very useful for preventing issues like race conditions, deadlocks, and data inconsistencies, which can arise when causal relationships between concurrent operations are not properly managed. Similarly, performance optimization often hinges on 
+some understanding of how on event might cause another~\cite{10.1007/978-3-030-59152-6_19, 10.1145/3492321.3519575, wu2019employing}. 
+%Identifying performance bottlenecks requires knowledge of causal relationships between different system components. 
+By understanding how interactions between components affect performance, engineers can make targeted optimizations to improve overall system efficiency.
+
+Maintaining traceability in software development involves tracking the origins of requirements, changes, and their implementation. 
+This process can be defined as  understanding the causal relationships between various development artifacts, ensuring changes are properly documented and their impacts are understood~\cite{6644251}.
+
+Finally, it is argued that  systems designed with a clear understanding of causality tend to be more reliable and maintainable~\cite{7321183}. 
+By comprehending how different parts of the system interact and affect each other, engineers can build more robust systems that are less prone to errors and easier to extend or modify. 
+
+\subsection{Use of Causal Graphs}
+
+Our reading of the SE literature is that   causal graphs are the most used causal reasoning applications~\cite{10197835}. 
+These causal graphs are used in several ways in an attempt to improve understanding and management of complex systems in software engineering~\cite{10197835}. 
+ 
+
+One significant application is in debugging and troubleshooting~\cite{10.1145/3635709, 10.1145/3377811.3380377}.
+When software fails, engineers might find   causal graphs useful to map out the sequence of events leading up to the failure. 
+For example, if an application crashes under certain conditions, a causal graph could help trace back through the code and system states to identify which specific inputs and interactions caused the crash. 
+This makes it easier to pinpoint and fix the root cause of the issue. 
+ 
+
+
+Causal graphs are also valuable in performance optimization~\cite{10.1007/978-3-030-59152-6_19, 10.1145/3492321.3519575, wu2019employing}. 
+Engineers can use them to identify bottlenecks and understand how different parts of a system interact to affect overall performance. 
+For instance, if a web application is slow, a causal graph can help visualize the causal relationships between user actions, server requests, database queries, and response times. 
+By understanding these interactions, engineers can make targeted optimizations, such as improving database indexing or optimizing server-side code, to enhance performance.
+
+Another crucial use of causal graphs in software engineering is in change impact and risk analysis~\cite{HU2013439}. 
+Before making modifications to a codebase, engineers can create causal graphs to predict how changes might propagate through the system. 
+For example, when adding a new feature, a causal graph can help identify which existing modules and functionalities will be affected, ensuring that potential issues are addressed before they arise. 
+This helps in better planning and risk management, reducing the likelihood of introducing new bugs or performance issues.
+ 
+\subsection{Instabilities in Causal Graphs}
+
+We offer two causes of causal graph instability: {\em algorithmic} or {\em intrinsic} factors.
+
+As to {\em algorithmic factors},  as mentioned above, causal graph generation is NP-hard. Hence,   practical and scalable causal graph generator muse use heuristics to generate its models.
+By their very definition, such heuristics are incomplete so seemingly minor changes in the control parameters of the generator, or in the data sampling, can lead to very different graphs.
+
+
+Another cause of causal graph instability is that causality may be {\em intrinsically unstable} in SE domains~\cite{chindelevitch2012assessing}. 
+These instabilities can arise due to various factors, such as dynamic environments, incomplete data,   evolving system requirements.
+
+ \textbf{Overlooking Instabilities:} One major issue is that causal graphs typically assume a static environment where relationships between variables remain constant over time~\cite{10.5555/2074284.2074334}. However, in real-world software systems, these relationships can change due to updates, new features, or changing user behavior. For example, a performance optimization that works under current conditions might become ineffective or even detrimental after a software update or a change in user traffic patterns. If the causal graph is not updated to reflect these changes, the reasoning based on it can lead to incorrect conclusions and ineffective interventions.
+
+   \textbf{Dynamic Environments:} In dynamic environments, the causal relationships between variables can shift, leading to instabilities in the causal graph~\cite{dong2014modeling}. For instance, in a distributed system, network latency might suddenly increase due to changes in infrastructure or varying loads. If the causal graph does not account for such variations, it may fail to accurately predict performance issues or the impact of changes. To mitigate this, engineers need to continuously monitor the system and update the causal graph to reflect current conditions, ensuring that causal reasoning remains accurate and relevant.
+
+ \textbf{Incomplete Data:} Incomplete data can also lead to instabilities in causal graphs~\cite{rohrer2018thinking, 10.5555/2073796.2073813}. When certain variables or causal relationships are not included, the graph provides an incomplete picture, potentially leading to incorrect causal inferences. For example, in a software application, if user behavior data is not fully captured, the causal graph may miss critical relationships that impact system performance or user experience. Engineers need to ensure that they have comprehensive data and regularly update the causal graph to include new variables and relationships as they become known.
+
+  \textbf{Evolving System Requirements:} As software systems evolve, their requirements and the interactions between components often change~\cite{9218193}. This evolution can introduce new variables and alter existing causal relationships, leading to instabilities in the causal graph. For example, adding a new feature might introduce dependencies that were not previously considered, changing the overall system dynamics. Engineers must be proactive in updating the causal graph to reflect these changes, ensuring that it remains an accurate representation of the system's causal structure.
+
+      \textbf{Evolving System Requirements:} As software systems evolve, their requirements and the interactions between components often change~\cite{9218193}. This evolution can introduce new variables and alter existing causal relationships, leading to instabilities in the causal graph. For example, adding a new feature might introduce dependencies that were not previously considered, changing the overall system dynamics. Engineers must be proactive in updating the causal graph to reflect these changes, ensuring that it remains an accurate representation of the system's causal structure.
+
+ 
+
+
+\subsection{Significance of Instabilities in Causal Graphs}
+
+For software engineering applications,
+instabilities in causal graphs matter because they can significantly impact the accuracy, reliability, and effectiveness of causal reasoning in software engineering~\cite{chindelevitch2012assessing}. 
+Here are several reasons why addressing these instabilities is crucial:
+
+\begin{itemize}
+    \item \textbf{Accuracy of Analysis.} Causal graphs are used to make predictions and inferences about the relationships between variables~\cite{liang2021normalized}. If the graph is unstable due to outdated or incorrect causal relationships, the resulting analysis can be inaccurate. For example, a performance optimization based on an outdated causal graph may fail to address the actual bottlenecks in a system, leading to suboptimal improvements or even performance degradation~\cite{10.1007/978-3-030-59152-6_19, 10.1145/3492321.3519575}.
+
+    \item \textbf{Reliability of Software Systems.} Unaddressed instabilities can lead to unreliable software behavior. In dynamic environments where system conditions change frequently, a static causal graph may fail to capture new dependencies or altered interactions between components~\cite{7097740}. This can result in unexpected system failures or erratic performance, undermining the reliability of the software. For instance, in a distributed system, failure to account for changes in network latency or server load can cause synchronization issues and data inconsistencies.
+
+    \item \textbf{Effectiveness of Interventions.} Effective interventions, such as bug fixes, performance optimizations, or new feature implementations, rely on an accurate understanding of causal relationships. Instabilities in the causal graph can lead to incorrect assumptions about how changes will affect the system~\cite{sharma2021dowhy}. This can result in ineffective or counterproductive interventions. For example, adding a new feature without understanding its impact on existing components can introduce new bugs or degrade system performance.
+
+    \item \textbf{Scalability and Maintainability.} Software systems need to scale and evolve over time to meet changing requirements and increasing user demands. Instabilities in causal graphs can hinder this process by making it difficult to predict the impact of changes accurately~\cite{9218193}. This can lead to increased maintenance efforts, as engineers struggle to diagnose and fix issues that arise from incorrect causal assumptions~\cite{7321183}. In a large-scale system, such instabilities can propagate, causing widespread problems that are costly and time-consuming to address.
+
+    \item \textbf{Data-Driven Decision Making.} In data-driven environments, decisions are often based on the insights derived from causal analysis. If the causal graph is unstable, the insights and recommendations generated from it can be misleading~\cite{10.1145/3636423}. This can lead to poor decision-making, whether it's in optimizing business processes, improving user experiences, or implementing new technologies. For example, in a recommendation system, inaccurate causal relationships can lead to irrelevant or ineffective recommendations, reducing user satisfaction and engagement.
+
+\end{itemize}
+
+
+%I'm not sure how to motivate this section. Here are some available tools:
+%CausalMGM: https://db.cs.pitt.edu/causalmgm/
+%DoWhy: https://github.com/py-why/dowhy
+%Pyro: https://pyro.ai/examples/intro_part_ii.html
+%Causal Impact: https://zissou.pacific.co/features/causal-impact
+
+% \subsection{Limited Checks for Stability}
+
+
+% Stability in causal graphs is essential because it helps validate that the identified causal relationships hold consistently across different scenarios and are not merely artifacts of specific data samples or initial conditions.
+% Without these checks, the results of causal inference may be biased or not generalizable. 
+% For example, a causal relationship identified in a single run might not appear in another run with a different random seed, indicating that the relationship is not stable or reliable.
